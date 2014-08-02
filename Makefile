@@ -1,5 +1,5 @@
 ifneq ($(KERNELRELEASE),) 
-   obj-m := spinlock_example.o
+   obj-m := spinlock.o
 else 
 
 KERNELDIR ?= /lib/modules/$(shell uname -r)/build 

@@ -5,10 +5,11 @@
 #include <linux/sched.h>  // for task_struct
 #include <linux/time.h>
 #include <linux/timer.h>
+#include <linux/delay.h> //Needed by msleep
 
 
 static struct task_struct *thread1,*thread2;
-static spinlock_t my_lock = SPIN_LOCK_UNLOCKED;
+static spinlock_t my_lock =  __SPIN_LOCK_UNLOCKED(); //SPIN_LOCK_UNLOCKED;
 
 int thread_fn1() {
 

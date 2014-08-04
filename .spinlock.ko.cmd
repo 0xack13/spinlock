@@ -1,0 +1,1 @@
+cmd_/home/supernova/oss/spinlock/spinlock.ko := ld -r -m elf_x86_64 -T /usr/src/linux-3.10-rc7/scripts/module-common.lds --build-id  -o /home/supernova/oss/spinlock/spinlock.ko /home/supernova/oss/spinlock/spinlock.o /home/supernova/oss/spinlock/spinlock.mod.o
